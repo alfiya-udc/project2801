@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Front-end developer Alfiya</title>
 </head>
@@ -13,13 +13,19 @@
       <img alt="Альфиюшка" src="" width="" height="">
     </div>
     
-    <nav class=main-nav main-nav--closed>
-      <button class="main-nav__toggle">Открыть меню</button>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle lang-toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__language-list">
-          <li class="main-nav__language main-nav__language--active"><a>Русский</a></li>
-          <li class="main-nav__language"><a href="">English</a></li>
-          <li class="main-nav__language"><a>Español</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Русский</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">English</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Español</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -32,7 +38,7 @@
       <div class="presentation__foto">
         <img alt="Мое фото" src="#">
       </div>
-      <aside class="presentation__object">
+      <aside class="presentation__object paragraph paragraph--comment">
         Этот сайт я сделала сама для моих потенциальных работодателей. Здесь вы найдете информацию обо мне, примеры моего кода, а также ссылки на проекты, в которых я участвовала. 
       </aside>
     </section>
@@ -48,7 +54,7 @@
             В одно прекрасное утро
           </h2>
 
-          <p class="info-essence__text">
+          <p class="info-essence__text paragraph">
             В одно прекрасное утро я проснулась и поняла, что хочу заниматься программированием. Я посвятила год его изучению, и вот результаты.
           </p>
 
@@ -63,13 +69,13 @@
               <dd>git, npm, Visual Code</dd>
           </dl>
 
-          <p class="info-essence__text">
+          <p class="info-essence__text paragraph paragraph--objective">
             Моя цель - получить должнось фронтэнд-разработчика в компании, которая в обмен на мою заботу и мои знания предоставит мне аналогичную заботу и денежное вознаграждение.
           </p>
         </article>
 
         <footer class="info__footer">
-          <button class="button js-button">
+          <button class="button js-info-switcher">
             Моя биография поподробнее
           </button>
         </footer>
@@ -78,7 +84,7 @@
 
     <section class="projeсts">
       <div class="projects__wrapper">
-        <header class="projects__header section-header js-header">
+        <header class="projects__header section-header js-projects-header">
           Мои проекты      
         </header>
 
@@ -94,32 +100,32 @@
       <div class="skills__wrapper">
         <ul class="skills__list list">
           <li class="list__item">
-            <span class="list__icon skills-icon">Ш</span>
+            <span class="list__icon icon-emotion">Ш</span>
             <p class="list__text">Люблю всё новое и интересное</p>
           </li>
 
           <li class="list__item">
-            <span class="list__icon skills-icon">Ш</span>
+            <span class="list__icon icon-emotion">Ш</span>
             <p class="list__text">Обучаюсь глубоко и вдумчиво</p>
           </li>
 
           <li class="list__item">
-            <span class="list__icon skills-icon">ш</span>
+            <span class="list__icon icon-emotion">ш</span>
             <p class="list__text">Люблю Javascript</p>
           </li>
 
           <li class="list__item">
-            <span class="list__icon skills-icon">ш</span>
+            <span class="list__icon icon-emotion">ш</span>
             <p class="list__text">Всегда нахожу что оптимизировать в коде</p>
           </li>
 
           <li class="list__item">
-            <span class="list__icon skills-icon">ш</span>
+            <span class="list__icon icon-emotion">ш</span>
             <p class="list__text">Суперответственная</p>
           </li>
 
           <li class="list__item">
-              <span class="list__icon skills-icon">ш</span>
+              <span class="list__icon icon-emotion">ш</span>
               <p class="list__text">И немного весёлая ;)</p>
           </li>
         </ul>
