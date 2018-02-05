@@ -1,14 +1,21 @@
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "presentation.scss";
-@import "paragraph.scss";
-@import "info.scss";
-@import "button.scss";
-@import "projects.scss";
-@import "section-header.scss";
-@import "skills.scss";
-@import "icon-emotion.scss";
-@import "list.scss";
-@import "page-footer.scss";
-@import "social-links.scss";
-@import "social-icon.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/presentation.scss";
+@import "blocks/info.scss";
+@import "blocks/projects.scss";
+@import "blocks/skills.scss";
+@import "blocks/page-footer.scss";
+
+
+@import "blocks/main-nav.scss";
+@import "blocks/section-header.scss";
+
+@import "blocks/list.scss";
+@import "blocks/paragraph.scss";
+@import "blocks/button.scss";
+
+@import "blocks/icon-emotion.scss";
+@import "blocks/social-links.scss";
+@import "blocks/social-icon.scss";
+
+@import "mixins.scss";

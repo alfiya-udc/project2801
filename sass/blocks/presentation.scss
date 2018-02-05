@@ -1,3 +1,28 @@
 .presentation {
-    background-color: #e9b9de;
+        
+        padding: 0;
+        height: 630px;
+        width:100%;
+        font-family: Verdana, sans-serif;
+    &__name {
+        font-size:50px;
+        font-weight:bold;
+        margin-top:160px;
+        margin-left:360px;
+        text-align: center;
+    }
+
+    &__foto {
+        height: 100%;
+        border: 5 px solid grey;
+        border-radius: 30%;
+        margin: 20px;
+    }
+
+    &__object {
+        font-size:22px; //писать ли сюда шрифт, если он уже определен у блока paragraph?
+        text-align: right;
+        margin: 170px 20px 80px;
+    }
+
 }

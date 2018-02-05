@@ -1,5 +1,10 @@
 /*Обо мне и мои проекты*/
 .section-header{
-    background-color: #d9c5e0;
-    
+    color: #9fd4ec;
+    ;
+    padding: 10px;
+
+    &--dark{
+        @include dark;
+    }
 }

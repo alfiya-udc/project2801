@@ -1,3 +1,9 @@
 .page-header {
-    background-color: #e9b9de;
+    padding: 0px 25px;
+    height:90px;
+    width:100%;
+    
+    &--colored{
+        @include colored;
+    }
 }

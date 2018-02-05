@@ -1,3 +1,26 @@
 .main-nav {
-    background-color: #e9b9de;
+        padding: 0;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        text-decoration: none;
+    &__wrapper{
+
+    }
+
+    &__item{
+        margin:30px;
+        display: inline-block;
+    }
+
+    &__item-active {
+        background-color: transparent;
+    }
+
+    &__list{
+
+    }
+
+
 }

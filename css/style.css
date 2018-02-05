@@ -1,2 +1,84 @@
-body {
-  background: red; }
+@charset "UTF-8";
+.page-header {
+  background-color: #f1dbec;
+  padding: 0px 25px;
+  height: 90px;
+  width: 100%; }
+
+.presentation {
+  background-color: #ffffff;
+  padding: 0;
+  height: 630px;
+  width: 1050px;
+  font-family: Verdana, sans-serif; }
+  .presentation__name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: 360px;
+    text-align: center; }
+  .presentation__foto {
+    width: 30%;
+    border: 5 px solid grey;
+    border-radius: 30%;
+    margin: 20px; }
+  .presentation__object {
+    font-size: 22px;
+    text-align: right;
+    margin: 170px 20px 80px; }
+
+.info {
+  background-color: #f1dbec;
+  padding: 10px;
+  width: 1050px; }
+
+.projects {
+  background-color: #f1dbec;
+  padding: 10px;
+  width: 1050px; }
+
+.skills {
+  background-color: #ffffff;
+  padding: 10px;
+  width: 1050px; }
+
+.page-footer {
+  background-color: #f1dbec;
+  padding: 10px;
+  width: 1050px; }
+
+.main-nav {
+  padding: 35px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none; }
+
+/*Обо мне и мои проекты*/
+.section-header {
+  background-color: #ad4ead;
+  color: #e9cae9;
+  padding: 10px; }
+
+/*list of the skills*/
+.list {
+  padding: 10px; }
+
+.paragraph {
+  background-color: none;
+  padding: 10px;
+  font-size: 22px; }
+
+/*моя биография поподробнее*/
+.button {
+  padding: 10px; }
+
+.icon-emotion {
+  padding: 10px; }
+
+.social-links {
+  padding: 10px; }
+
+.social-icon.scss {
+  padding: 10px; }
