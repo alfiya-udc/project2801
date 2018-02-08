@@ -4,25 +4,37 @@
         height: 630px;
         width:100%;
         font-family: Verdana, sans-serif;
+
     &__name {
+        width: 525px;
         font-size:50px;
         font-weight:bold;
         margin-top:160px;
-        margin-left:360px;
+        padding-right:70px;
         text-align: center;
+        float:right;
     }
 
     &__foto {
-        height: 100%;
-        border: 5 px solid grey;
-        border-radius: 30%;
-        margin: 20px;
+        width: 495px;
+        margin: 15px;
+        float:left;
+
+        img {
+            border: 5px solid grey;
+            border-radius: 20%;
+        }
     }
 
     &__object {
-        font-size:22px; //писать ли сюда шрифт, если он уже определен у блока paragraph?
+        width: 525px;
+        padding:10px;
+        padding-left: 25px; //вот здесь мешали левые маргины
+        margin-top: 65px;
+        margin-bottom: 65px;
+        font-size:20px;
         text-align: right;
-        margin: 170px 20px 80px;
+        float: right;
     }
 
 }

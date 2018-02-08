@@ -1,7 +1,16 @@
 /*моя биография поподробнее*/
 .button {
-    margin: 30px;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
-    width: 290px;
-    height: 55px;
+    width: 310px;
+    min-height: 55px;
+    background-color: &colored; // не работает
+    border: 2px solid $dark;
+    border-radius:30%;
+    
 }

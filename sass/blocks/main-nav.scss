@@ -1,10 +1,11 @@
 .main-nav {
         padding: 0;
+        font-family: Verdana, sans-serif;
         font-weight: bold;
         font-size: 16px;
         line-height: 1.5;
         text-align: left;
-        text-decoration: none;
+        text-decoration: none; //почему это не применяется к ссылкам? и вообще стили для ссылок не работают
     &__wrapper{
 
     }
@@ -12,6 +13,24 @@
     &__item{
         margin:30px;
         display: inline-block;
+        
+        li:hover {
+            color:grey;
+            transition: color 0.5s;
+        }
+
+        li:active {
+            color:grey;
+        }
+
+        li:focus {
+            color:grey;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
     }
 
     &__item-active {

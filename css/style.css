@@ -1,84 +1,237 @@
 @charset "UTF-8";
-.page-header {
-  background-color: #f1dbec;
-  padding: 0px 25px;
-  height: 90px;
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+p, h1 {
+  padding: 0; }
+
+img {
   width: 100%; }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.page-header {
+  padding: 0px 25px;
+  min-height: 90px;
+  width: 100%;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold; }
+  .page-header--colored {
+    background-color: #d0e8f3; }
+  .page-header__logo {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto; }
+
 .presentation {
-  background-color: #ffffff;
   padding: 0;
   height: 630px;
-  width: 1050px;
+  width: 100%;
   font-family: Verdana, sans-serif; }
   .presentation__name {
+    width: 525px;
     font-size: 50px;
     font-weight: bold;
     margin-top: 160px;
-    margin-left: 360px;
-    text-align: center; }
+    padding-right: 70px;
+    text-align: center;
+    float: right; }
   .presentation__foto {
-    width: 30%;
-    border: 5 px solid grey;
-    border-radius: 30%;
-    margin: 20px; }
+    width: 495px;
+    margin: 15px;
+    float: left; }
+    .presentation__foto img {
+      border: 5px solid grey;
+      border-radius: 20%; }
   .presentation__object {
-    font-size: 22px;
+    width: 525px;
+    padding: 10px;
+    padding-left: 25px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    font-size: 20px;
     text-align: right;
-    margin: 170px 20px 80px; }
+    float: right; }
 
 .info {
-  background-color: #f1dbec;
-  padding: 10px;
-  width: 1050px; }
+  font-family: Verdana, sans-serif;
+  width: 100%; }
+  .info__wrapper--colored {
+    background-color: #d0e8f3; }
+  .info__header {
+    padding: 20px;
+    width: 525px;
+    height: 90px;
+    text-align: left; }
+  .info__essence--colored {
+    background-color: #d0e8f3; }
+  .info__foto {
+    width: 475px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: right; }
+  .info__footer {
+    padding: 30px 10px;
+    text-transform: uppercase;
+    font-size: 16px; }
 
 .projects {
-  background-color: #f1dbec;
-  padding: 10px;
-  width: 1050px; }
+  font-family: Verdana, sans-serif;
+  width: 100%; }
+  .projects__wrapper--colored {
+    background-color: #d0e8f3; }
+  .projects__header {
+    padding: 20px;
+    width: 525px;
+    text-align: right;
+    height: 90px; }
 
 .skills {
-  background-color: #ffffff;
   padding: 10px;
-  width: 1050px; }
+  width: 100%;
+  font-family: Verdana, sans-serif; }
+  .skills__header {
+    width: 725px;
+    margin: 65px auto;
+    font-size: 32px;
+    font-weight: bold; }
+  .skills__list {
+    font-size: 20px;
+    font-weight: bold; }
 
 .page-footer {
-  background-color: #f1dbec;
   padding: 10px;
-  width: 1050px; }
+  width: 100%;
+  margin: 0;
+  min-height: 150px; }
+  .page-footer--wrapper {
+    margin: 0 auto; }
+  .page-footer--colored {
+    background-color: #d0e8f3; }
+  .page-footer__social {
+    margin: 50px auto;
+    padding: 0; }
 
 .main-nav {
-  padding: 35px 25px;
+  padding: 0;
+  font-family: Verdana, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
   text-decoration: none; }
+  .main-nav__item {
+    margin: 30px;
+    display: inline-block; }
+    .main-nav__item li:hover {
+      color: grey;
+      transition: color 0.5s; }
+    .main-nav__item li:active {
+      color: grey; }
+    .main-nav__item li:focus {
+      color: grey; }
+    .main-nav__item a {
+      text-decoration: none; }
+  .main-nav__item-active {
+    background-color: transparent; }
 
 /*Обо мне и мои проекты*/
 .section-header {
-  background-color: #ad4ead;
-  color: #e9cae9;
-  padding: 10px; }
+  font-family: Verdana, sans-serif;
+  padding: 10px;
+  padding-top: 50px;
+  width: 525px;
+  height: 90px; }
+  .section-header--dark {
+    background-color: #025277;
+    color: #d7eef8; }
+
+.info-essence {
+  font-family: Verdana, sans-serif;
+  width: 525px;
+  padding-left: 30px;
+  padding-top: 50px;
+  text-align: left; }
+  .info-essence__header {
+    padding: 0;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 40px; }
+  .info-essence__text {
+    font-size: 22px;
+    padding-bottom: 40px; }
+  .info-essence__advantages-list {
+    padding-bottom: 40px;
+    font-size: 22px; }
+    .info-essence__advantages-list dd {
+      padding-left: 170px; }
 
 /*list of the skills*/
 .list {
-  padding: 10px; }
+  padding: 10px;
+  width: 760px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto; }
+  .list__item {
+    width: 345px;
+    min-height: 120px; }
+  .list__icon {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid grey; }
+  .list__text {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
 
 .paragraph {
-  background-color: none;
-  padding: 10px;
   font-size: 22px; }
+  .paragraph--comment {
+    font-size: 20px; }
 
 /*моя биография поподробнее*/
 .button {
-  padding: 10px; }
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 310px;
+  min-height: 55px;
+  background-color: .button colored;
+  border: 2px solid #025277;
+  border-radius: 30%; }
 
 .icon-emotion {
-  padding: 10px; }
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid grey; }
 
 .social-links {
-  padding: 10px; }
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto; }
 
-.social-icon.scss {
-  padding: 10px; }
+.social-icon {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid grey; }
