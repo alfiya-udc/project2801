@@ -5,18 +5,19 @@ body {
   padding: 0; }
 
 ul {
-  list-style: none; }
-
-p, h1 {
+  list-style: none;
+  margin: 0;
   padding: 0; }
+
+p, h2 {
+  padding: 0;
+  margin: 0; }
 
 img {
   width: 100%; }
 
 *, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 .page-header {
   padding: 0px 25px;
@@ -80,6 +81,7 @@ img {
     margin-right: 25px;
     float: right; }
   .info__footer {
+    width: 100%;
     padding: 30px 10px;
     text-transform: uppercase;
     font-size: 16px; }
@@ -131,16 +133,16 @@ img {
   text-decoration: none; }
   .main-nav__item {
     margin: 30px;
-    display: inline-block; }
-    .main-nav__item li:hover {
-      color: grey;
-      transition: color 0.5s; }
-    .main-nav__item li:active {
-      color: grey; }
-    .main-nav__item li:focus {
-      color: grey; }
-    .main-nav__item a {
-      text-decoration: none; }
+    display: inline-block;
+    transition: color 0.5s; }
+  .main-nav__item:hover {
+    color: grey; }
+  .main-nav__item:active {
+    color: grey; }
+  .main-nav__item:focus {
+    color: grey; }
+  .main-nav__link {
+    text-decoration: none; }
   .main-nav__item-active {
     background-color: transparent; }
 
@@ -210,11 +212,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  width: 310px;
+  width: 400px;
   min-height: 55px;
-  background-color: .button colored;
+  background-color: #d0e8f3;
   border: 2px solid #025277;
-  border-radius: 30%; }
+  border-radius: 20px; }
 
 .icon-emotion {
   margin: 10px;
@@ -224,7 +226,6 @@ img {
   border: 1px solid grey; }
 
 .social-links {
-  width: 100%;
   text-align: center;
   padding: 10px;
   margin: 0 auto; }
