@@ -1,0 +1,19 @@
+.projects {
+    font-family: Verdana, sans-serif;
+    width:100%;
+
+    &__wrapper {
+
+        &--colored {
+            background-color: $colored;
+        }
+    }
+
+    &__header {
+        padding: 20px;
+        width: 525px;
+        text-align: right;
+        height: 90px;
+    }
+
+}
