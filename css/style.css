@@ -1,13 +1,12 @@
 @charset "UTF-8";
 body {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   font-weight: normal;
-  font-family: "PT Serif", Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #292827;
   margin: 0;
-  padding: 0;
-  background-color: #d0e8f3; }
+  padding: 0; }
 
 ul {
   list-style: none;
@@ -29,52 +28,55 @@ img {
   box-sizing: border-box; }
 
 .page-header {
-  padding: 0px 25px;
+  background-color: #e4f0fc;
   min-height: 90px;
-  width: 100%;
-  font-family: Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: bold; }
-  .page-header--colored {
-    background-color: #d0e8f3; }
+  width: 100%; }
   .page-header__logo {
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto; }
+    width: 180px; }
 
 .presentation {
   min-height: 300px;
   width: 100%;
-  background-image: url("/img/background4.jpeg");
+  background-image: url("../img/background4.jpg");
   background-size: cover;
-  background-origin: border-box; }
+  background-origin: border-box;
+  padding: 20px;
+  padding-top: 20px; }
   .presentation__name {
     font-size: 30px;
     font-weight: bold;
     line-height: 60px;
-    margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 65px; }
   .presentation__object {
-    padding: 10px;
-    margin-top: 65px;
     font-size: 14px;
     text-align: right; }
 
 .info {
-  width: 100%; }
-  .info__essence {
-    text-indent: 20px; }
+  width: 100%;
+  background-color: #e4f0fc;
+  padding: 20px; }
   .info__header {
-    font-size: 26px;
-    padding: 20px;
-    text-align: left; }
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px; }
+  .info__text {
+    font-size: 14px;
+    margin-bottom: 30px; }
+  .info__advantages-list {
+    min-width: 360px;
+    font-size: 14px;
+    margin-bottom: 30px; }
 
-.projects__header {
-  padding: 20px;
-  min-height: 90px; }
+.projects {
+  background-color: #e4f0fc;
+  padding: 20px; }
+  .projects__item {
+    min-height: 90px;
+    border-bottom: 1px solid #025277; }
 
 .skills {
-  padding: 10px; }
+  padding: 20px; }
   .skills__header {
     font-size: 24px;
     font-weight: bold;
@@ -86,32 +88,30 @@ img {
 .page-footer {
   padding: 10px;
   width: 100%;
-  margin: 0;
-  min-height: 150px; }
-  .page-footer--colored {
-    background-color: #d0e8f3; }
+  min-height: 150px;
+  background-color: #e4f0fc; }
   .page-footer__social {
-    margin: 50px auto;
     padding: 0;
     text-align: center; }
 
 .main-nav {
-  padding: 0;
+  padding: 20px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  text-align: left; }
+  text-align: right; }
   .main-nav__item {
-    min-width: 320px;
     min-height: 80px;
     transition: color 0.5s;
     border: 1px solid #a5c6e0; }
-  .main-nav__item:hover {
-    color: grey; }
-  .main-nav__item:active {
-    color: grey; }
-  .main-nav__item:focus {
-    color: grey; }
+    .main-nav__item:hover {
+      color: grey; }
+    .main-nav__item:active {
+      color: grey; }
+    .main-nav__item:focus {
+      color: grey; }
+    .main-nav__item:visited {
+      color: #292827; }
   .main-nav__link {
     text-decoration: none; }
   .main-nav__item-active {
@@ -119,46 +119,58 @@ img {
 
 /*Обо мне и мои проекты*/
 .section-toggler {
-  padding: 10px;
+  padding: 20px;
   min-height: 90px;
-  color: #bad3da; }
+  width: 100%;
+  background-color: #e4f0fc; }
   .section-toggler__button {
-    min-width: 260px;
-    border: 2px solid #025277;
-    color: #bad3da;
+    text-decoration: none;
+    outline: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: 0% 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+    width: 100%;
+    display: block;
     padding-top: 30px;
-    min-height: 100px; }
+    min-height: 100px;
+    font-size: 18px;
+    font-weight: bold; }
     .section-toggler__button--left {
       text-align: left;
-      background-image: linear-gradient(to right, #025277, #0172a7); }
+      border-bottom: 1px solid #025277;
+      background-image: url("../img/background2.jpg");
+      color: white; }
     .section-toggler__button--right {
       text-align: right;
-      background-image: linear-gradient(to left, #025277, #0172a7); }
+      border-bottom: 1px solid #025277;
+      background-image: url("../img/background4.jpg");
+      color: #7f7c7d; }
 
 /*list of the skills*/
-.list {
-  min-width: 320px; }
-  .list__item {
-    min-width: 320px;
-    min-height: 100px;
-    margin-bottom: 30px; }
-  .list__icon {
-    width: 45px;
-    height: 45px;
-    border: 1px solid grey;
-    font-size: 45px;
-    color: #025277;
-    opacity: 0.8; }
-  .list__text {
-    font-size: 20px;
-    font-weight: bold; }
+.list__item {
+  min-height: 100px;
+  margin-bottom: 30px; }
+
+.list__icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid grey;
+  font-size: 45px;
+  color: #025277;
+  opacity: 0.8; }
+
+.list__text {
+  font-size: 20px;
+  font-weight: bold; }
 
 /*моя биография поподробнее*/
 .button {
   text-transform: uppercase;
   padding: 20px;
-  min-width: 260px;
-  background-color: #d0e8f3;
+  background-color: #e4f0fc;
   border: 2px solid #025277;
   border-radius: 20px; }
 

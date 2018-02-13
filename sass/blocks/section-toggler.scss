@@ -1,29 +1,43 @@
 /*Обо мне и мои проекты*/
 .section-toggler {
-    padding: 10px;
+    padding: 20px;
     min-height: 90px;
-    color: #bad3da; //почему этот цвет не наследовался?
-    
+    width:100%;
+    background-color: $colored;
+            
     &__wrapper {
         
     }
 
     &__button {
-        min-width: 260px;
-        border: 2px solid $dark;
-        color: #bad3da;
+        text-decoration: none;
+        outline: none;
+        padding: 20px 30px;
+        border-radius: 10px;
+        //background: linear-gradient(to right, #778388 0%, #c6e5ff 40%, #c6e5ff 61%, #878f96 100%);
+        background-size: cover;
+        background-position: 0% 15%;
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+        transition: .5s;
+        width:100%;
+        display: block;
         padding-top:30px;
         min-height: 100px;
-
+        font-size: 18px;
+        font-weight: bold;
        
         &--left {
             text-align: left;
-            background-image: linear-gradient(to right, #025277, #0172a7);
+            border-bottom: 1px solid $dark;
+            background-image: url("../img/background2.jpg");
+            color: white;
         }
 
         &--right {
             text-align: right;
-            background-image: linear-gradient(to left, #025277, #0172a7)
+            border-bottom: 1px solid $dark;
+            background-image: url("../img/background4.jpg");
+            color: #7f7c7d;
         }
     }
 

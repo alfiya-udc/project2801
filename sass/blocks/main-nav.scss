@@ -1,9 +1,9 @@
 .main-nav {
-        padding: 0;
+        padding: 20px;
         font-weight: bold;
         font-size: 16px;
         line-height: 30px;
-        text-align: left;
+        text-align: right;
 
     &__toggle {
 
@@ -18,24 +18,25 @@
     }
 
     &__item {
-        min-width: 320px;
         min-height: 80px;
         transition: color 0.5s;
         border: 1px solid #a5c6e0;
-    }
-        
-    &__item:hover {
-        color:grey;
-        
-        
-    }
 
-    &__item:active {
-        color:grey;
-    }
+        &:hover {
+            color:grey;
+        }
 
-    &__item:focus {
-        color:grey;
+        &:active {
+            color:grey;
+        }
+
+        &:focus {
+            color:grey;
+        }
+
+        &:visited {
+            color:#292827;
+        }
     }
 
     &__link {
@@ -46,12 +47,12 @@
         background-color: transparent;
     }
     
-@media ($tablet-widths) {
+    @media ($tablet-widths) {
 
-}
+    }
 
-@media ($desktop-widths) {
-    
-}
+    @media ($desktop-widths) {
+        
+    }
 
 }

@@ -1,9 +1,7 @@
 /*list of the skills*/
 .list {
-    min-width:320px;
-    
+        
     &__item {
-        min-width:320px;
         min-height: 100px;
         margin-bottom: 30px;
     }
@@ -21,13 +19,12 @@
         font-size: 20px;
         font-weight: bold;
     }
-
     
-@media ($tablet-widths) {
+    @media ($tablet-widths) {
 
-}
+    }
 
-@media ($desktop-widths) {
-    
-}
+    @media ($desktop-widths) {
+        
+    }
 }
