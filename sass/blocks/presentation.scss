@@ -1,40 +1,32 @@
 .presentation {
-        
-        padding: 0;
-        height: 630px;
-        width:100%;
-        font-family: Verdana, sans-serif;
-
+        min-height: 300px;
+        width: 100%;
+        background-image: url("/img/background4.jpeg");
+        background-size: cover;
+        background-origin: border-box;
+                
     &__name {
-        width: 525px;
-        font-size:50px;
+        font-size:30px;
         font-weight:bold;
-        margin-top:160px;
-        padding-right:70px;
+        line-height: 60px;
+        margin-top:20px;
         text-align: center;
-        float:right;
-    }
-
-    &__foto {
-        width: 495px;
-        margin: 15px;
-        float:left;
-
-        img {
-            border: 5px solid grey;
-            border-radius: 20%;
-        }
     }
 
     &__object {
-        width: 525px;
         padding:10px;
-        padding-left: 25px; //вот здесь мешали левые маргины
         margin-top: 65px;
-        margin-bottom: 65px;
-        font-size:20px;
+        font-size:14px;
         text-align: right;
-        float: right;
     }
+
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
 
 }

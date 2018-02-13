@@ -1,0 +1,39 @@
+/*Обо мне и мои проекты*/
+.section-toggler {
+    padding: 10px;
+    min-height: 90px;
+    color: #bad3da; //почему этот цвет не наследовался?
+    
+    &__wrapper {
+        
+    }
+
+    &__button {
+        min-width: 260px;
+        border: 2px solid $dark;
+        color: #bad3da;
+        padding-top:30px;
+        min-height: 100px;
+
+       
+        &--left {
+            text-align: left;
+            background-image: linear-gradient(to right, #025277, #0172a7);
+        }
+
+        &--right {
+            text-align: right;
+            background-image: linear-gradient(to left, #025277, #0172a7)
+        }
+    }
+
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
+
+}

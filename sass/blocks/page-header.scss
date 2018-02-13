@@ -1,4 +1,6 @@
 .page-header {
+
+
     padding: 0px 25px;
     min-height:90px;
     width:100%;
@@ -17,5 +19,13 @@
         margin-right:auto;
     }
 
+
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
 
 }

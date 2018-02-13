@@ -5,7 +5,7 @@
     min-height: 150px;
 
     &--wrapper {
-        margin: 0 auto;
+        
     }
 
     &--colored {
@@ -15,6 +15,15 @@
     &__social {
         margin: 50px auto; //все равно не центруется
         padding: 0;
+        text-align: center;
     }
 
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
 }

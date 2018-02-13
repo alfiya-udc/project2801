@@ -1,5 +1,14 @@
 .social-links {
     text-align: center;
     padding: 10px;
-    margin: 0 auto; //не работает отцентровка через Margin auto
+    margin: 0 auto;
+
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
 }
