@@ -1,22 +1,55 @@
 .skills {
-    padding: 10px;
-    width:100%;
-    font-family: Verdana, sans-serif;
+    padding: 30px;
 
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 30px;
+    }
+    
     &__wrapper {
+        padding: 0;
+        padding-top: 20px;
 
+        @media ($tablet-widths) {
+            width: 50%;
+            padding: 0;
+            padding-top: 20px;
+            @include container;
+        }
+        
+        @media ($desktop-widths) {
+            
+        }
     }
 
     &__header {
-        width: 725px;
-        margin: 65px auto;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media ($tablet-widths) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media ($desktop-widths) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
-
     }
+
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
 }

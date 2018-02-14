@@ -1,15 +1,19 @@
 /*моя биография поподробнее*/
 .button {
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: auto; //а здесь что не так с отцентровкой?
-    margin-right: auto;
     padding: 20px;
-    width: 400px;
-    min-height: 55px;
-    background-color: $colored;
+    //background-color: $colored;
+    background-color: transparent;
     border: 2px solid $dark;
-    border-radius:20px;    
+    border-radius: 10px;
+    
+    @media (min-width: 768px) {
+        font-size: 16px;
+
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }   
 }
+

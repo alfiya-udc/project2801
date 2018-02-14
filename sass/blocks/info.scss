@@ -1,40 +1,122 @@
 .info {
-    font-family: Verdana, sans-serif;
     width:100%;
+    //background-color: $colored;
+    background-image: linear-gradient(to bottom, #e6e7ec, #ffffff);
+    line-height: 1.5;
+    padding: 20px;
+
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    @media ($desktop-widths) {
+        
+    }
 
     &__wrapper {
+        padding: 0;
+        padding-top: 20px;
+        @include container;
+       
+        @media ($tablet-widths) {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 
-        &--colored {
-            background-color: $colored;
+    &__essence {
+        @media ($tablet-widths) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+            order: 2;
+        }
+
+        @media ($desktop-widths) {
+        
         }
     }
 
     &__header {
-        padding: 20px;
-        width: 525px;
-        height: 90px;
+        font-size: 24px;
         text-align: left;
+        margin-bottom: 20px;
+
+        @media ($tablet-widths) {
+            width: 150%; //так можно?
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
     }
 
-    &__essence {
-
-        &--colored {
-            background-color: $colored;
+    &__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+        @media ($tablet-widths) {
+            font-size: 20px;
         }
-        
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+    }
+
+    &__advantages-list {
+        min-width:360px;
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        @media ($tablet-widths) {
+            font-size: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
     }
 
     &__foto {
-        width: 475px;
-        margin-left:25px;
-        margin-right: 25px;
-        float:right;
+        @media ($tablet-widths) {
+            width: 45%;
+            order: 1;
+        }
+    
+        @media ($desktop-widths) {
+            
+        }
+            
     }
 
     &__footer {
-        width:100%;
-        padding: 30px 10px;
-        text-transform: uppercase;
-        font-size: 16px;
+
+        @media ($tablet-widths) {
+            order: 3;
+        }
+    
+        @media ($desktop-widths) {
+            
+        }
+        
+    }
+    
+    @media ($tablet-widths) {
+
+    }
+
+    @media ($desktop-widths) {
+        
     }
 }
