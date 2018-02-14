@@ -1,14 +1,42 @@
 .skills {
-    padding: 20px;
-       
-    &__wrapper {
+    padding: 30px;
 
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 30px;
+    }
+    
+    &__wrapper {
+        padding: 0;
+        padding-top: 20px;
+
+        @media ($tablet-widths) {
+            width: 50%;
+            padding: 0;
+            padding-top: 20px;
+            @include container;
+        }
+        
+        @media ($desktop-widths) {
+            
+        }
     }
 
     &__header {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 30px;
+        text-align: center;
+
+        @media ($tablet-widths) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media ($desktop-widths) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
     }
 
     &__list {

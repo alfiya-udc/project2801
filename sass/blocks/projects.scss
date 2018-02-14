@@ -1,9 +1,25 @@
 .projects {
     background-color: $colored;
     padding: 20px;
+    display: none;
+
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 20px;
+    }
 
     &__wrapper {
 
+        @media ($tablet-widths) {
+            padding: 0;
+            padding-top: 20px;
+            @include container;
+        }
+    
+        @media ($desktop-widths) {
+            
+        }
+        
     }
 
     &__list {

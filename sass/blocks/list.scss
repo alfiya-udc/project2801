@@ -1,9 +1,31 @@
 /*list of the skills*/
 .list {
+    
+    margin: 0 auto;
+
+    @media ($tablet-widths) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media ($desktop-widths) {
+        width: 85%;
+    }
         
     &__item {
         min-height: 100px;
         margin-bottom: 30px;
+
+        @media ($tablet-widths) {
+            width:50%;
+            margin-bottom: 50px;
+        }
+    
+        @media ($desktop-widths) {
+            margin-bottom: 60px;
+        }
     }
 
     &__icon {
