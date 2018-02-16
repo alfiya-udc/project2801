@@ -13,12 +13,12 @@
         @media ($tablet-widths) {
             width: 50%;
             padding: 0;
-            padding-top: 20px;
+            padding-top: 80px;
             @include container;
         }
         
         @media ($desktop-widths) {
-            
+            padding-top: 130px;
         }
     }
 
