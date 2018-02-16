@@ -1,11 +1,20 @@
 .page-footer {
-    padding: 10px;
-    width:100%;
+
     min-height: 150px;
-    background-color: $colored;
+    background-color: black;
+    color: white;
 
     &__wrapper {
+        padding: 20px;
+
+        @media ($tablet-widths) {
+            padding: 0;
+            padding-top: 30px;
+        }
         
+        @media ($desktop-widths) {
+            
+        }
     }
 
     &__social {

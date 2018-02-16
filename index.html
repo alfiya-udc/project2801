@@ -7,13 +7,14 @@
   <title>Front-end developer Alfiya</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img alt="Альфиюшка" src="img/logo5.svg" width="180">
+        <img alt="Альфиюшка" src="img/logo3.svg" width="180">
       </div>
       
       <nav class="main-nav main-nav--closed">
@@ -21,16 +22,22 @@
         
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <img src="">
-              <a class="main-nav__link">Русский</a>
+              <a class="main-nav__link main-nav__link--active">
+                <!-- <i class="main-nav__icon"></i> -->
+                <span class="main-nav__text">Русский</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <img src="">
-              <a href="#" class="main-nav__link">English</a>
+              <a href="#" class="main-nav__link">
+                <!-- <i class="main-nav__icon"></i> -->
+                <span class="main-nav__text">English</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <img src="">
-              <a href="#" class="main-nav__link">Español</a>
+              <a href="#" class="main-nav__link">
+                  <!-- <i class="main-nav__icon"></i> -->
+                  <span class="main-nav__text">Español</span>
+                </a>
             </li>
           </ul>
         
@@ -61,11 +68,12 @@
     
     <section class="info">
       <div class="info__wrapper">
-        <article class="info__essence">
-          <h2 class="info__header">
-            В одно прекрасное утро
-          </h2>
-
+        
+        <h2 class="info__header">
+          В одно прекрасное утро
+        </h2>
+        
+        <article class="info__column">
           <p class="info__text">
             В одно прекрасное утро я проснулась и поняла, что хочу заниматься программированием. Я посвятила год его изучению, и вот результаты.
           </p>
@@ -87,15 +95,16 @@
          
         </article>
 
-        <div class="info__foto">
-          <img alt="Моя фотка" src="img/foto1.jpg">
-        </div>
-
-        <footer class="info__footer">
+        <article class="info__column">
+          <div class="info__foto">
+            <picture>
+                <img alt="Моя фотка" src="img/foto2.jpg">
+            </picture>
+          </div>
           <button class="button js-info-switcher">
             Моя биография поподробнее
           </button>
-        </footer>
+        </article>
       </div>
     </section>
 
@@ -118,27 +127,27 @@
         </h2>
         <ul class="skills__list list">
           <li class="list__item">
-            <i class="fas fa-camera-retro list__icon"></i>
+            <i class="fas fa-grav list__icon"></i>
             <p class="list__text">Люблю всё новое и интересное</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-camera-retro list__icon"></i>
+            <i class="fas fa-chess list__icon"></i>
             <p class="list__text">Обучаюсь глубоко и вдумчиво</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-camera-retro list__icon"></i>
+            <i class="fas fa-heart list__icon"></i>
             <p class="list__text">Люблю Javascript</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-camera-retro list__icon"></i>
+            <i class="fas fa-sitemap list__icon"></i>
             <p class="list__text">Упрощаю и оптимизирую</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-camera-retro list__icon"></i>
+            <i class="fas fa-tasks list__icon"></i>
             <p class="list__text">Суперответственная</p>
           </li>
 
