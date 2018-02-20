@@ -1,5 +1,4 @@
 .social-icon {
-    padding: 10px;
     width: 20px;
     height: 20px;
     box-sizing: border-box;
@@ -7,7 +6,12 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    margin-right: 10px; 
+    margin-right: 10px;
+
+    &:hover {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 
     &--gh {
         background-image: url("../img/gh.svg");

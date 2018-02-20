@@ -37,27 +37,27 @@
         background-size: cover;
         display: block;
 
-        &1 {
+        &--astronaut {
             background-image: url("../img/astronaut.svg");
         }
 
-        &2 {
+        &--study {
             background-image: url("../img/study.svg");
         }
 
-        &3 {
+        &--heart {
             background-image: url("../img/heart.svg");
         }
 
-        &4 {
+        &--yin-yang {
             background-image: url("../img/yin-yang.svg");
         }
 
-        &5 {
+        &--tasks {
             background-image: url("../img/tasks.svg");
         }
 
-        &6 {
+        &--baby {
             background-image: url("../img/baby.svg");
         }
     }

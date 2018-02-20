@@ -457,17 +457,17 @@ picture {
     opacity: 0.7;
     background-size: cover;
     display: block; }
-    .list__icon1 {
+    .list__icon--astronaut {
       background-image: url("../img/astronaut.svg"); }
-    .list__icon2 {
+    .list__icon--study {
       background-image: url("../img/study.svg"); }
-    .list__icon3 {
+    .list__icon--heart {
       background-image: url("../img/heart.svg"); }
-    .list__icon4 {
+    .list__icon--yin-yang {
       background-image: url("../img/yin-yang.svg"); }
-    .list__icon5 {
+    .list__icon--tasks {
       background-image: url("../img/tasks.svg"); }
-    .list__icon6 {
+    .list__icon--baby {
       background-image: url("../img/baby.svg"); }
   .list__text {
     font-size: 20px;
@@ -497,12 +497,9 @@ picture {
     color: #c5c5c5; }
 
 .social-links {
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto; }
+  text-align: center; }
 
 .social-icon {
-  padding: 10px;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -511,6 +508,9 @@ picture {
   width: 2rem;
   height: 2rem;
   margin-right: 10px; }
+  .social-icon:hover {
+    width: 2.5rem;
+    height: 2.5rem; }
   .social-icon--gh {
     background-image: url("../img/gh.svg"); }
   .social-icon--fb {
