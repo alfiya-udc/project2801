@@ -14,7 +14,9 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <img alt="Альфиюшка" src="img/logo3.svg" width="180">
+        <a href="#">
+          <img alt="Альфиюшка" src="img/logo3.svg" width="180">
+        </a>
       </div>
       
       <nav class="main-nav main-nav--closed">
@@ -98,7 +100,9 @@
         <article class="info__column">
           <div class="info__foto">
             <picture>
-                <img alt="Моя фотка" src="img/foto2.jpg">
+              <source media="(min-width:1200px srcset='img/foto1200.jpg 1x, img/foto2400.jpg 2x')">
+              <source media="(min-width:768px srcset='img/foto0800.jpg 1x, img/foto1800.jpg 2x')">
+              <img alt="Моя фотка" src="img/foto0400.jpg" srcset="img/foto800.jpg 2x">
             </picture>
           </div>
           <button class="button js-info-switcher">
@@ -127,32 +131,32 @@
         </h2>
         <ul class="skills__list list">
           <li class="list__item">
-            <i class="fas fa-grav list__icon"></i>
+            <i class="list__icon1 list__icon"></i>
             <p class="list__text">Люблю всё новое и интересное</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-chess list__icon"></i>
+            <i class="list__icon2 list__icon"></i>
             <p class="list__text">Обучаюсь глубоко и вдумчиво</p>
           </li>
 
-          <li class="list__item">
-            <i class="fas fa-heart list__icon"></i>
+          <li class="list__item ">
+            <i class="list__icon3 list__icon"></i>
             <p class="list__text">Люблю Javascript</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-sitemap list__icon"></i>
+            <i class="list__icon4 list__icon"></i>
             <p class="list__text">Упрощаю и оптимизирую</p>
           </li>
 
           <li class="list__item">
-            <i class="fas fa-tasks list__icon"></i>
+            <i class="list__icon5 list__icon"></i>
             <p class="list__text">Суперответственная</p>
           </li>
 
           <li class="list__item">
-              <i class="fas fa-camera-retro list__icon"></i>
+              <i class="list__icon6 list__icon"></i>
               <p class="list__text">И немного весёлая ;)</p>
           </li>
         </ul>

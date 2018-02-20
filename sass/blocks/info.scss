@@ -2,10 +2,11 @@
     width:100%;
     line-height: 1.5;
     padding: 20px;
+    padding-top: 40px;
 
     @media ($tablet-widths) {
         padding: 0;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     @media ($desktop-widths) {
@@ -13,8 +14,7 @@
     }
 
     &__wrapper {
-        padding: 0;
-        padding-top: 20px;
+        
         @include container;
        
         @media ($tablet-widths) {
@@ -86,7 +86,9 @@
     &__foto {
 
         margin-bottom: 20px;
-
+        display: flex;
+        justify-content: center;
+        
         @media ($tablet-widths) {
             padding-left: 20px;
         }

@@ -3,22 +3,26 @@
     width: 20px;
     height: 20px;
     box-sizing: border-box;
-    border: 1px solid grey;
+    background-size: cover;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px; 
 
     &--gh {
-        
+        background-image: url("../img/gh.svg");
     }
 
     &--fb {
-
+        background-image: url("../img/fb.svg");
     }
 
     &--vk {
-
+        background-image: url("../img/vk.svg");
     }
 
     &--in {
-        
+        background-image: url("../img/in.svg");
     }
 
     
