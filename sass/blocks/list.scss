@@ -32,9 +32,36 @@
         width:45px;
         height:45px;
         font-size: 40px;
-        color: black;
+        color: rgb(109, 0, 0);
         opacity:0.7;
+        background-size: cover;
+        display: block;
+
+        &--astronaut {
+            background-image: url("../img/astronaut.svg");
+        }
+
+        &--study {
+            background-image: url("../img/study.svg");
+        }
+
+        &--heart {
+            background-image: url("../img/heart.svg");
+        }
+
+        &--yin-yang {
+            background-image: url("../img/yin-yang.svg");
+        }
+
+        &--tasks {
+            background-image: url("../img/tasks.svg");
+        }
+
+        &--baby {
+            background-image: url("../img/baby.svg");
+        }
     }
+
 
     &__text {
         font-size: 20px;
