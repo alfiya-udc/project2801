@@ -507,10 +507,9 @@ picture {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  margin-right: 10px; }
+  margin-right: 0.8rem; }
   .social-icon:hover {
-    width: 2.5rem;
-    height: 2.5rem; }
+    transform: scale(1.2); }
   .social-icon--gh {
     background-image: url("../img/gh.svg"); }
   .social-icon--fb {

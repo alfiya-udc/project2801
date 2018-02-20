@@ -6,11 +6,10 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    margin-right: 10px;
+    margin-right: 0.8rem;
 
     &:hover {
-        width: 2.5rem;
-        height: 2.5rem;
+        transform: scale(1.2);
     }
 
     &--gh {
