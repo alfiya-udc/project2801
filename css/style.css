@@ -492,17 +492,17 @@ picture {
     background-size: cover;
     display: block; }
     .list__icon--astronaut {
-      background-image: url("../img/astronaut.svg"); }
+      background-image: url("../img/icons/astronaut.svg"); }
     .list__icon--study {
-      background-image: url("../img/study.svg"); }
+      background-image: url("../img/icons/study.svg"); }
     .list__icon--heart {
-      background-image: url("../img/heart.svg"); }
+      background-image: url("../img/icons/heart.svg"); }
     .list__icon--yin-yang {
-      background-image: url("../img/yin-yang.svg"); }
+      background-image: url("../img/icons/yin-yang.svg"); }
     .list__icon--tasks {
-      background-image: url("../img/tasks.svg"); }
+      background-image: url("../img/icons/tasks.svg"); }
     .list__icon--baby {
-      background-image: url("../img/baby.svg"); }
+      background-image: url("../img/icons/baby.svg"); }
   .list__text {
     font-size: 20px;
     font-weight: bold; }
@@ -545,13 +545,13 @@ picture {
   .social-icon:hover {
     transform: scale(1.2); }
   .social-icon--gh {
-    background-image: url("../img/gh.svg"); }
+    background-image: url("../img/social/gh.svg"); }
   .social-icon--fb {
-    background-image: url("../img/fb.svg"); }
+    background-image: url("../img/social/fb.svg"); }
   .social-icon--vk {
-    background-image: url("../img/vk.svg"); }
+    background-image: url("../img/social/vk.svg"); }
   .social-icon--in {
-    background-image: url("../img/in.svg"); }
+    background-image: url("../img/social/in.svg"); }
 
 .modal {
   display: none;
