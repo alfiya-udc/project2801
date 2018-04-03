@@ -431,7 +431,8 @@ picture {
     text-decoration: none;
     outline: none;
     padding: 20px 30px;
-    background-color: #e0dfdf;
+    background-color: white;
+    border: 1px solid black;
     color: black;
     transition: 0.8s;
     width: 100%;
@@ -440,7 +441,8 @@ picture {
     font-weight: bold;
     cursor: pointer; }
     .section-toggler__button:hover {
-      background-color: #6abfbf; }
+      background-color: #6abfbf;
+      border: none; }
     .section-toggler__button--left {
       text-align: left; }
     .section-toggler__button--right {

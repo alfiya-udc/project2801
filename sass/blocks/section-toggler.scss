@@ -22,7 +22,8 @@
         text-decoration: none;
         outline: none;
         padding: 20px 30px;
-        background-color: rgb(224, 223, 223);
+        background-color: white;
+        border: 1px solid black;
         color: black;
         transition: 0.8s;
         width:100%;
@@ -37,6 +38,7 @@
         
         &:hover {
             background-color: #6abfbf;
+            border: none;
         }
        
         &--left {
