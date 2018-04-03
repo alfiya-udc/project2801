@@ -3,7 +3,6 @@
     padding: 20px;
     min-height: 90px;
     width:100%;
-    cursor: pointer;
     
     @media ($tablet-widths) {
         padding: 0;
@@ -17,11 +16,6 @@
         @media ($tablet-widths) {
             flex-direction: row;
         }
-        
-        @media ($desktop-widths) {
-            
-        }
-
     }
 
     &__button {
@@ -30,22 +24,19 @@
         padding: 20px 30px;
         background-color: rgb(224, 223, 223);
         color: black;
-        transition: 0.5s;
+        transition: 0.8s;
         width:100%;
         min-height: 100px;
         font-size: 18px;
         font-weight: bold;
-        /*visibility: visible;
-        animation-delay: 0.2s;
-        animation-name: lift;*/
-        
+        cursor: pointer;
+
         &--hidden {
 
         }
         
         &:hover {
-            background-color: black;
-            color: #ffffff;
+            background-color: #6abfbf;
         }
        
         &--left {
@@ -57,10 +48,8 @@
         }
 
         &--active {
-            background: white;
-            color: black;
-            border: 1px solid black;
-            border-bottom: none;
+            background-color: black;
+            color: white;
             
             order: 1;
 

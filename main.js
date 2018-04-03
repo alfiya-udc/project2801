@@ -25,27 +25,32 @@ window.addEventListener("click", removeModalFromWindow);
 
 //Здесь добавляю табы на "Обо мне" и "Мои проекты"
 
-function ObjectElements (header, content) {
-    this.header = header;
-    this.content = content;
-}
+let tabsContainer = document.getElementById("js-tabs");
+tabsContainer.addEventListener("click", createTabs);
 
-let projectsObject = new ObjectElements(projectsHeader, tabProjects);
-let infoObject = new ObjectElements(infoHeader, tabInfo);
+function createTabs(event) {
 
-let infoHeader = document.getElementsByClassName("js-info-header")[0];
-let projectsHeader = document.getElementsByClassName("js-projects-header")[0];
-let tabInfo = document.getElementsByClassName("js-tab-info")[0];
-let tabProjects = document.getElementsByClassName("js-tab-projects")[0];
-
-function toggleClass() {
-    let header = event.target;
-
-    if content.classList.contains("hidden") {
-        content.classList.remove("hidden");
-        header.classList.add("section-toggler__button--active");
+    if (event.target.classList.contains("js-tab-header")) {
+        //сделали массив из всех таб-заголовков
+        let tabsHeaders = Array.from(tabsContainer.querySelectorAll(".js-tab-header"));
+        //присвоили номер каждому таб-заголовку
+        let tabIndex = tabsHeaders.indexOf(event.target);
+        //отключаем класс актив у всех таб-заголовков
+        tabsHeaders.map(tabHeader => tabHeader.classList.remove("section-toggler__button--active"));
+        //добавляем целевому элементу класс актив
+        event.target.classList.add("section-toggler__button--active");
+        
+        //разберемся со вкладками
+        //положим все вкладки (проекты и инфо) в массив panels
+        let panels = Array.from(document.querySelectorAll(".js-tab-panel"));
+        //если индекс совпадает с активным, то показать, если нет, то скрыть
+        for (let i = 0; i< panels.length; i++) {
+            if (tabIndex === i) {
+                panels[i].style.display = "block";
+            } else {
+                panels[i].style.display = "none";
+            }
+        }
     }
 }
 
-infoHeader.addEventListener("click", toggleClass);
-projectsHeader.addEventListener("click", toggleClass);

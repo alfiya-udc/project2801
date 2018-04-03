@@ -58,17 +58,17 @@
     </section>
 
     <section class="section-toggler">
-      <div class="section-toggler__wrapper">
-        <button class="section-toggler__button section-toggler__button--left section-toggler__button--active js-info-header">
+      <div class="section-toggler__wrapper" id="js-tabs">
+        <button class="section-toggler__button section-toggler__button--left section-toggler__button--active js-tab-header">
           Обо мне      
         </button>
-        <button class="section-toggler__button section-toggler__button--right js-projects-header">
+        <button class="section-toggler__button section-toggler__button--right js-tab-header">
             Мои проекты      
         </button>
       </div>
     </section>
     
-    <section class="info js-tab-info">
+    <section class="info js-tab-panel">
       <div class="info__wrapper">
         
         <h2 class="info__header">
@@ -112,13 +112,22 @@
       </div>
     </section>
 
-    <section class="projects js-tab-projects js-hide">
+    <section class="projects js-tab-panel">
       
       <div class="projects__wrapper">
         <ul class="projects__list">
-          <li class="projects__item">Первый проект</li>
-          <li class="projects__item">Второй проект</li>
-          <li class="projects__item">Третий проект</li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/js_20171116">Учебный проект с курсов Javascript</a>
+            <p class="projects__description">Цель - создать веб-приложение в виде чата. Проект не мой личный, его делали группой, а точнее - преподаватель, и мы лишь время от времени пуллреквестили ему домашние задания по проекту.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/LearnJSApp">Веб-приложение для обучений детей JS</a>
+            <p class="projects__description">Сейчас я как раз работаю над этим приложением.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/project2801">Сайт-портфолио</a>
+            <p class="projects__description">Собственно сайт, на котором вы сейчас находитесь, тоже сделан мной. На гитхабе есть его код.</p>
+          </li>
         </ul>
       </div>
 
